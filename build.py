@@ -15,7 +15,11 @@ D = [
     ("08-skyspace-tunnel", "Skyspace Tunnel", "The screen sits at the bottom of a stepped well. Turn the ring around it; the steps light as you go deeper."),
     ("09-two-and-three", "Two and Three", "Chord pads in two rows, the back ones grouped 2 + 3 like a piano's black keys, plus a dotted strum strip."),
     ("10-open-cube-field", "Open Cube Field", "A graph-paper grid. An open cube marks where your hand plays in the air."),
+    ("11-fold", "Fold", "New direction. One rust-red aluminium sheet folded like a tent card; light pours over the fold to the controls."),
+    ("12-arch", "Arch", "New direction. A low celadon vault: play gestures with your hand in the tunnel; the dial strip climbs over the top."),
+    ("13-pavilion", "Pavilion", "New direction. A roof plate floats over a heavy base on three columns; roll the corner column to change level."),
 ]
+D = [d for d in D if os.path.isdir(os.path.join(SRC, d[0]))]
 VIEWS = [("hero", "Lit"), ("unlit", "Power off"), ("top", "Top"), ("low", "Low")]
 
 def jpg(path):
